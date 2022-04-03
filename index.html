@@ -51,6 +51,10 @@
   <script>
     async function sendShare() {
       const result = await liff.shareTargetPicker([{
+        "type": "flex",
+        "altText": "แจกทุนฟรี100บาทถอนได้จริง",
+    "type": "flex",
+    "contents": {
         "type": "bubble",
   "size": "giga",
   "hero": {
@@ -117,6 +121,7 @@
     "backgroundColor": "#191970",
     "margin": "none"
   }
+}
       }])
       if (result) {
         liff.closeWindow()
